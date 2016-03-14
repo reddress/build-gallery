@@ -1,0 +1,5 @@
+1;Porta foto
+2;Lupa (metal)
+3;Moedor de pimenta 
+4;escova
+5;balança
