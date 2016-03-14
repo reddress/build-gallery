@@ -5,7 +5,7 @@
 
 // input format, in file input.txt:
 //
-// FILENAME (without .jpg extension);DESCRIPTION
+// FILENAME (with extension);DESCRIPTION
 
 // Run:
 // php build.php
@@ -63,7 +63,7 @@ _END;
 while (($line = fgets($input)) !== false) {
   $line = str_replace(";", ":", $line);
   $components = explode(":", $line);
-  echo "<li><div><img src='img/" . $components[0] . ".jpg'><br>" . $components[1] . "</div></li>\n";
+  echo "<li><div><img src='img/" . $components[0] . "'><br>" . $components[1] . "</div></li>\n";
 }
 
 echo <<<_END
